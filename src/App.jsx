@@ -4,26 +4,26 @@ import './App.css'
 function App() {
   const data = [
     ["Задача", "Часов в день"],
-    ["Работа", 9],
-    ["Прием пищи", 2],
-    ["Поездка на работу", 1],
-    ["Просмотр телевизора", 3],
+    ["Бьюти-рутина", 1],
     ["Сон", 8],
     ["Зарядка", 1],
-    ["Бьюти-рутина", 1],
+    ["Прием пищи", 2],
+    ["Учеба", 9],
     ["Уборка", 2],
+    ["Поход за продуктами", 1],
     ["Приготовление еды", 2],
+    ["Просмотр телевизора", 3],
   ];
 
   const options = {
     title: "Моя повседневная активность",
-    pieHole: 0.4, // Creates a Donut Chart. Does not do anything when is3D is enabled
-    is3D: true, // Enables 3D view
-    // slices: {
-    //   1: { offset: 0.2 }, // Explodes the second slice
-    // },
-    pieStartAngle: 100, // Rotates the chart
-    sliceVisibilityThreshold: 0.02, // Hides slices smaller than 2%
+    pieHole: 0.4, // Создает кольцевую диаграмму. Ничего не делаю, если включен is3D 
+    is3D: true, // Включает 3D-вид
+    slices: {
+      7: { offset: 0.2 }, // Взрывает второй срез
+    },
+    pieStartAngle: 30, // Поворачивает диаграмму
+    sliceVisibilityThreshold: 0.02, // Скрывает срезы размером менее 2%
     legend: {
       position: "bottom",
       alignment: "center",
